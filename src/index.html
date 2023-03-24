@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../static/lib/bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./../static/lib/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
     <link rel="shortcut icon" href="./../static/img/IconoGEP.png">
     <link rel="stylesheet" href="./../static/css/style.css">
     <title>Organigrama - GEP 2023</title>
 </head>
 <body>
 
-    <div class="card text-center border-warning">
+    <div class="card text-center border-warning" style="width: 98%; margin: 20px;">
         <div class="card-header">
             <img src="./../static/img/LogoGEP-Positivo.png">
             <h2>Organigrama de Grupo Empresarial Protección S.A.S</h2>
         </div>
         <div class="card-body">
-
             <div class="organigrama">
                 <ul>
                     <li>
-                      <a>Asamblea de Accionistas</a>
-                      <ul>
-                        <li><a>Gerente</a>
-                          <ul>
+                      <a id="asamblea">Asamblea de Accionistas</a>
+                      <ul class="hidden" id="ulAsamblea">
+                        <li><a id="gerente">Gerente</a>
+                          <ul class="hidden" id="ulGerente">
                             <li id="auditor"><a class="revisor">Auditor Externo</a></li>
-                            <li><a>Director Jurídico</a>
-                              <ul>
+                            <li><a id="dirJuridico">Director Jurídico</a>
+                              <ul class="hidden" id="ulDirJuridico">
                                 <li><a class="revisor">Abogados externos</a></li>
                                 <li><a>Coordinador Jurídico Senior</a>
                                   <ul>
@@ -46,8 +45,8 @@
                                 </li>
                               </ul>
                             </li>
-                            <li><a>Director Comercial</a>
-                              <ul>
+                            <li><a id="dirComercial">Director Comercial</a>
+                              <ul class="hidden" id="ulDirComercial">
                                 <li><a>Coordinador Comercial</a>
                                   <ul>
                                     <li><a>Conferencistas Junior</a></li>
@@ -56,15 +55,15 @@
                                 <li><a>Conferencistas</a></li>
                               </ul>
                             </li>
-                            <li><a>Supervisor de Telemercadeo</a>
-                              <ul>
+                            <li><a id="supTelemercadeo">Supervisor de Telemercadeo</a>
+                              <ul class="hidden" id="ulSupTelemercadeo">
                                 <li><a>Telemercaderistas</a></li>
                               </ul>
                             </li>
                             <li><a>Relacionistas Públicas</a></li>
                             <li><a>Ejecutivas Comerciales</a></li>
                             <li><a>Administrador de Sistemas</a>
-                              <ul>
+                              <ul class="hidden">
                                 <li><a>Técnico en Sistemas</a></li>
                                 <li><a>Aprendiz Sena</a></li>
                                 <li><a>Datamarshall</a></li>
@@ -73,7 +72,7 @@
                           </ul>
                         </li>
                         <li><a>Jefe de RRHH</a>
-                          <ul>
+                          <ul class="hidden">
                             <li><a>Generalista RRHH</a></li>
                             <li><a>Psicologo de Selección</a></li>
                             <li><a>Todero</a></li>
@@ -81,7 +80,7 @@
                           </ul>
                         </li>
                         <li><a>Subgerente</a>
-                          <ul>
+                          <ul class="hidden">
                             <li><a>Coordinador de SAC</a>
                               <ul>
                                 <li><a>Supervisor</a>
@@ -133,7 +132,6 @@
                     <li><a class="revisor">Revisor fiscal</a></li>
                 </ul>
             </div>
-
         </div>
         <div class="card-footer">
             <span>Hecho por</span>
@@ -141,6 +139,7 @@
         </div>
     </div>
 
-    <script src="./../static/lib/bootstrap-5.2.3-dist/js/bootstrap.js"></script>
+    <script src="./../static/js/main.js"></script>
+    <script src="./../static/lib/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
 </body>
 </html>

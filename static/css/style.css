@@ -86,6 +86,7 @@ body {
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     transition: all 500ms;
+    cursor: pointer;
 }
 
 .organigrama li a:hover {
@@ -98,13 +99,14 @@ body {
 .organigrama > ul > li > a {
     font-size: 1em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .organigrama > ul > li > ul > li > a {
     width: 8em;
 }
 
-/* Estilos nuevos */
+/* New styles */
 
 .revisor {
     border: 1px dashed #FFC30D !important;
@@ -117,36 +119,40 @@ body {
     display: inline-block !important;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Resposive */
 
-@media screen and (max-width: 600px) {
-.organigrama li {
-    float: none;
-    width: 100%;
-    text-align: left;
-}
+/* @media screen and (max-width: 600px) {
+    .organigrama li {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
 
-.organigrama li:last-child::before {
-    display: none;
-}
+    .organigrama li:last-child::before {
+        display: none;
+    }
 
-.organigrama li:first-child::after {
-    display: none;
-}
+    .organigrama li:first-child::after {
+        display: none;
+    }
 
-.organigrama li::before, .organigrama li::after {
-    display: none;
-}
+    .organigrama li::before, .organigrama li::after {
+        display: none;
+    }
 
-.organigrama ul ul::before {
-    display: none;
-}
+    .organigrama ul ul::before {
+        display: none;
+    }
 
-.organigrama > ul > li > a {
-    font-size: 1.2em;
-}
+    .organigrama > ul > li > a {
+        font-size: 1.2em;
+    }
 
-.organigrama > ul > li > ul > li > a {
-    width: 100%;
-}
-}
+    .organigrama > ul > li > ul > li > a {
+        width: 100%;
+    }
+} */
