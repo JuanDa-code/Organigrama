@@ -1,8 +1,10 @@
 const asamblea = document.querySelector("#asamblea");
 const ulAsamblea = document.querySelector("#ulAsamblea");
+const revisorFiscal = document.querySelector("revisorFiscal");
 
 asamblea.addEventListener('click', () => {
     show(ulAsamblea);
+    show(revisorFiscal);
 });
 
 /* Gerente */

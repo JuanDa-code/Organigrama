@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../static/lib/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./../static/lib/bootstrap-5.2.3-dist/css/bootstrap.css">
     <link rel="shortcut icon" href="./../static/img/IconoGEP.png">
     <link rel="stylesheet" href="./../static/css/style.css">
     <title>Organigrama - GEP 2023</title>
@@ -71,7 +71,7 @@
                             </li>
                           </ul>
                         </li>
-                        <li><div class="d-flex" style="height: 40px;"><div class="vr"></div></div><a id="jefeRRHH">Jefe de RRHH</a>
+                        <li><div class="d-flex" style="height: 40px;"><div class="vr" style="margin-left: 0.9px; padding: 0.1px; border-color: #f80; background-color: #f80; opacity: 100%;"></div></div><a id="jefeRRHH">Jefe de RRHH</a>
                           <ul class="hidden" id="ulJefeRRHH">
                             <li><a>Generalista RRHH</a></li>
                             <li><a>Psicologo de Selección</a></li>
@@ -79,7 +79,7 @@
                             <li><a>Aprendiz Sena</a></li>
                           </ul>
                         </li>
-                        <li><hr id="hrSubgerente"><a id="subgerente">Subgerente</a>
+                        <li><div class="d-flex" style="height: 20px;"><div class="vr" style="border-color: #f80; background-color: #f80; opacity: 100%;"></div></div><a id="subgerente">Subgerente</a>
                           <ul class="hidden" id="ulSubgerente">
                             <li><a id="coorSac">Coordinador de SAC</a>
                               <ul class="hidden" id="ulCoorSac">
@@ -129,9 +129,13 @@
                         </li>
                       </ul>
                     </li>
-                    <li><a class="revisor">Revisor fiscal</a></li>
+                    <li id="revisorFiscal" class="hidden"><a class="revisor">Revisor fiscal</a></li>
                 </ul>
             </div>
+        </div>
+        <div id="tabla">
+          <div id="interno"><b>Interno</b></div>
+          <div id="externo"><b>Externo</b></div>
         </div>
         <div class="card-footer">
             <span>Hecho por</span>
@@ -140,6 +144,6 @@
     </div>
 
     <script src="./../static/js/main.js"></script>
-    <script src="./../static/lib/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="./../static/lib/bootstrap-5.2.3-dist/js/bootstrap.js"></script>
 </body>
 </html>

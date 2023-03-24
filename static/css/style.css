@@ -126,25 +126,42 @@ body {
     display: none;
 }
 
-/* #jefeRRHH {
-    margin-top: 40px;
-} */
-
-#subgerente {
-    margin-top: 20px;
-}
-
 #liPsicologas {
     margin-left: 75px;
 }
 
-/* #hrRRHH {
-    height:20px;
-    width:.5vw;
-    border-width:0;
-    color:#000;
-    background-color:#000;
-} */
+#tabla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#interno {
+    border: 1px solid #f80;
+    background-color:#f80;
+    height: 30px;
+    width: 60px;
+    font-size: small;
+    color: #f0f0f0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#externo {
+    border: 1px solid #FFC30D;
+    background-color:#FFC30D;
+    height: 30px;
+    width: 60px;
+    font-size: small;
+    color: black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Resposive */
 
