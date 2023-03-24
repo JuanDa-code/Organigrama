@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../static/lib/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./../static/lib/bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="shortcut icon" href="./../static/img/IconoGEP.png">
     <link rel="stylesheet" href="./../static/css/style.css">
     <title>Organigrama - GEP 2023</title>
@@ -62,8 +62,8 @@
                             </li>
                             <li><a>Relacionistas Públicas</a></li>
                             <li><a>Ejecutivas Comerciales</a></li>
-                            <li><a>Administrador de Sistemas</a>
-                              <ul class="hidden">
+                            <li><a id="adminSistemas">Administrador de Sistemas</a>
+                              <ul class="hidden" id="ulAdminSistemas">
                                 <li><a>Técnico en Sistemas</a></li>
                                 <li><a>Aprendiz Sena</a></li>
                                 <li><a>Datamarshall</a></li>
@@ -71,18 +71,18 @@
                             </li>
                           </ul>
                         </li>
-                        <li><a>Jefe de RRHH</a>
-                          <ul class="hidden">
+                        <li><div class="d-flex" style="height: 40px;"><div class="vr"></div></div><a id="jefeRRHH">Jefe de RRHH</a>
+                          <ul class="hidden" id="ulJefeRRHH">
                             <li><a>Generalista RRHH</a></li>
                             <li><a>Psicologo de Selección</a></li>
                             <li><a>Todero</a></li>
                             <li><a>Aprendiz Sena</a></li>
                           </ul>
                         </li>
-                        <li><a>Subgerente</a>
-                          <ul class="hidden">
-                            <li><a>Coordinador de SAC</a>
-                              <ul>
+                        <li><hr id="hrSubgerente"><a id="subgerente">Subgerente</a>
+                          <ul class="hidden" id="ulSubgerente">
+                            <li><a id="coorSac">Coordinador de SAC</a>
+                              <ul class="hidden" id="ulCoorSac">
                                 <li><a>Supervisor</a>
                                   <ul>
                                     <li><a>Auxiliares de SAC</a></li>
@@ -90,39 +90,39 @@
                                 </li>
                               </ul>
                             </li>
-                            <li><a>Supervisor de SCC</a>
-                              <ul>
+                            <li><a id="superSCC">Supervisor de SCC</a>
+                              <ul class="hidden" id="ulSuperSCC">
                                 <li><a>Auxiliares de SCC</a></li>
                               </ul>
                             </li>
-                            <li><a>Área Administrativa</a>
-                              <ul>
+                            <li><a id="areaAdmin">Área Administrativa</a>
+                              <ul class="hidden" id="ulAreaAdmin">
                                 <li><a>Digitadores</a></li>
                                 <li><a>Monitores de Calidad</a></li>
                                 <li><a>Recepcionistas</a></li>
                               </ul>
                             </li>
-                            <li><a>Coordinador de Cartera</a>
-                              <ul>
+                            <li><a id="coorCartera">Coordinador de Cartera</a>
+                              <ul class="hidden" id="ulCoorCartera">
                                 <li><a>Analistas de Cartera</a></li>
                                 <li><a>Analista de Cobranza Administrativo</a></li>
                                 <li><a>Auxiliar Administrativo</a></li>
                               </ul>
                             </li>
-                            <li><a>Supervisor de PQR's</a>
-                              <ul>
+                            <li><a id="superPQR">Supervisor de PQR's</a>
+                              <ul class="hidden" id="ulSuperPQR">
                                 <li><a>Auxiliares y Analistas Jurídicos</a></li>
                               </ul>
                             </li>
-                            <li><a>Contabilidad</a>
-                              <ul>
+                            <li><a id="contabilidad">Contabilidad</a>
+                              <ul class="hidden" id="ulContabilidad">
                                 <li><a>Analista Contable 1</a></li>
                                 <li><a>Analista Contable 2</a></li>
                               </ul>
                             </li>
-                            <li><a>Lider de Línea de Servicio Psicológico</a>
-                              <ul>
-                                <li><a>Psicologas</a></li>
+                            <li><a id="psicologia">Lider de Línea de Servicio Psicológico</a>
+                              <ul class="hidden" id="ulPsicologia">
+                                <li id="liPsicologas"><a>Psicologas</a></li>
                               </ul>
                             </li>
                           </ul>
@@ -140,6 +140,6 @@
     </div>
 
     <script src="./../static/js/main.js"></script>
-    <script src="./../static/lib/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="./../static/lib/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>

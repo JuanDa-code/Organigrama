@@ -5,6 +5,9 @@ body {
 .organigrama * {
     margin: 0px;
     padding: 0px;
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 .organigrama ul {
@@ -122,6 +125,26 @@ body {
 .hidden {
     display: none;
 }
+
+/* #jefeRRHH {
+    margin-top: 40px;
+} */
+
+#subgerente {
+    margin-top: 20px;
+}
+
+#liPsicologas {
+    margin-left: 75px;
+}
+
+/* #hrRRHH {
+    height:20px;
+    width:.5vw;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+} */
 
 /* Resposive */
 
